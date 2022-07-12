@@ -109,11 +109,20 @@ var pokemons =
   // Pedir el numero prompt
   numero = parseInt(prompt('Por favor introduce un numero'));
 
+  if(Number.isInteger(numero)) {
+    // Si numero es mayoy a la longitud del array entonces actualizar el valor de numero a la 
+    // longitud del arreglo 
+    if(numero > pokemons.length){
+      numero = pokemons.length;
+    }
+  }
+
+
   // Si numero es mayoy a la longitud del array entonces actualizar el valor de numero a la 
   // longitud del arreglo 
-  if(numero > pokemons.length){
+  /*if(numero > pokemons.length){
     numero = pokemons.length;
-  }
+  }*/
 
   // For desde 0 hasta numero
   for (var i = 0; i < numero; i++) {
