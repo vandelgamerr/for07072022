@@ -115,18 +115,16 @@ var pokemons =
     if(numero > pokemons.length){
       numero = pokemons.length;
     }
-  }
 
-
-  // Si numero es mayoy a la longitud del array entonces actualizar el valor de numero a la 
-  // longitud del arreglo 
-  /*if(numero > pokemons.length){
-    numero = pokemons.length;
-  }*/
-
-  // For desde 0 hasta numero
+     // For desde 0 hasta numero
   for (var i = 0; i < numero; i++) {
     if(i % 5 == 0){
         console.log(pokemons[i]);
     }
   }
+
+  }
+
+
+ 
+
